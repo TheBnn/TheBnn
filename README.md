@@ -17,3 +17,8 @@ To build the app from the command line, use the Gradle wrapper provided in the r
 
 This downloads the required Gradle version (see `gradle/wrapper/gradle-wrapper.properties`) and compiles the project. You can also open the project in Android Studio and use the standard Run/Build tasks.
 
+
+## License
+
+This project is licensed under the [MIT License](LICENSE).
+
