@@ -1,4 +1,4 @@
-package com.example.packagingapp.data
+package com.example.bagstash.data
 
 import androidx.room.Dao
 import androidx.room.Insert
