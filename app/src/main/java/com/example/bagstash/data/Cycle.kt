@@ -1,9 +1,9 @@
 package com.example.packagingapp.data
 
-import androidx.room.Entity
-import androidx.room.ForeignKey
-import androidx.room.Index
-import androidx.room.PrimaryKey
+import androidx.room.vo.ForeignKey
+import androidx.room.vo.ForeignKeyAction
+import androidx.room.vo.Index
+
 
 @Entity(
     tableName = "Cycle",
@@ -12,13 +12,13 @@ import androidx.room.PrimaryKey
             entity = Machine::class,
             parentColumns = ["machineId"],
             childColumns = ["machineId"],
-            onDelete = ForeignKey.CASCADE
+            onDelete = ForeignKeyAction.CASCADE
         ),
         ForeignKey(
             entity = Session::class,
             parentColumns = ["sessionId"],
             childColumns = ["sessionId"],
-            onDelete = ForeignKey.CASCADE
+            onDelete = ForeignKeyAction.CASCADE
         )
     ],
     indices = [Index("machineId"), Index("sessionId")]
