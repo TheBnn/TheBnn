@@ -5,6 +5,11 @@ plugins {
     id("kotlin-kapt")
 }
 
+// Exclude IntelliJ annotations to avoid duplicate class conflicts during build
+configurations.all {
+    exclude(group = "com.intellij", module = "annotations")
+}
+
 android {
     namespace = "com.example.bagstash"
     compileSdk = 35
