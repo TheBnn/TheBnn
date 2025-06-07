@@ -1,4 +1,8 @@
 .idea/
 .gradle/
+/.gradle/
+/.idea/
+/.kotlin/
+/app/build/
 local.properties
 **/build/

@@ -4,8 +4,8 @@ import javax.inject.Inject
 
 class AllocationEngine @Inject constructor(
     private val machineDao: MachineDao,
-    private val cycleDao: CycleDao,
-    private val recordDao: RecordDao
+    private val recordDao: RecordDao,
+    private val cycleDao: CycleDao
 ) {
     suspend fun autoAllocate(sessionId: Long) {
         val unassigned = recordDao.getRecordsBySessionAndNoMachine(sessionId)
