@@ -1,4 +1,4 @@
-package com.example.packagingapp.data
+package com.example.bagstash.data
 
 import javax.inject.Inject
 

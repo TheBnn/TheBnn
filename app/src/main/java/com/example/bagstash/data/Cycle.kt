@@ -1,8 +1,9 @@
-package com.example.packagingapp.data
+package com.example.bagstash.data
 
-import androidx.room.vo.ForeignKey
-import androidx.room.vo.ForeignKeyAction
-import androidx.room.vo.Index
+import androidx.room.Entity
+import androidx.room.ForeignKey
+import androidx.room.PrimaryKey
+import androidx.room.Index
 
 
 @Entity(
@@ -12,13 +13,13 @@ import androidx.room.vo.Index
             entity = Machine::class,
             parentColumns = ["machineId"],
             childColumns = ["machineId"],
-            onDelete = ForeignKeyAction.CASCADE
+            onDelete = ForeignKey.CASCADE
         ),
         ForeignKey(
             entity = Session::class,
             parentColumns = ["sessionId"],
             childColumns = ["sessionId"],
-            onDelete = ForeignKeyAction.CASCADE
+            onDelete = ForeignKey.CASCADE
         )
     ],
     indices = [Index("machineId"), Index("sessionId")]
