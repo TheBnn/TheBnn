@@ -5,7 +5,7 @@ BagStash is a small Android application built with Jetpack Compose. This project
 ## Prerequisites
 
 - **JDK 11** or higher on your `PATH`
-- **Android SDK**. Set the path to your SDK in `local.properties` using the `sdk.dir` property. Android Studio normally generates this file for you.
+- **Android SDK**. Copy `local.properties.example` to `local.properties` and set `sdk.dir` to your SDK path. Android Studio normally generates this file for you.
 
 ## Building
 
