@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">PackagingApp</string>
+    <string name="main_new_session">Новый учёт</string>
+    <string name="main_open_journal">Открыть дневной журнал</string>
+    <string name="main_allocation">Распределение по машинам</string>
+    <string name="main_archive">Архив</string>
+    <string name="main_settings">Настройки</string>
+</resources>
