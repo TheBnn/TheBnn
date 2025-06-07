@@ -1,4 +1,4 @@
-package com.example.packagingapp.data
+package com.example.bagstash.data
 
 import androidx.room.Database
 import androidx.room.RoomDatabase
